@@ -24,7 +24,6 @@ font-weight:bolder;
 font-size:18px;
 text-align:right;
 }
-.h2{display:none;     }
 .h3{ background-color:green;
   color:red;
   font-family:serif ;
@@ -92,12 +91,16 @@ cover
   display: inline-block;
   margin: 10px;
   padding: 10px 15px;
-  background: #25D366;
+  background:#25D366;
   color: white;
   text-decoration: none;
   border-radius: 5px;
 }
-
+.btn:hover{
+  background-color:red;
+  color:green;
+   cursor: pointer; 
+}
 button:hover {
   background:red;
   color:green;
