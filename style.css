@@ -2,7 +2,7 @@ body{
   background-color:#002256ed;}
 .x { 
   color:red;
-  background-image:url(images/an.jpg);
+  background-image:url(an.jpg);
   background-size:contain;
   background-position:right top;
   width:auto;
