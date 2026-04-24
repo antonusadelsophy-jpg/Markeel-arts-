@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | Markeel Art</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background:#490000ed;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background: #000;
+    padding: 15px;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar a:hover {
+    color: gold;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    background: #1c1c1c;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Info */
+.info {
+    padding: 15px;
+    text-align: center;
+}
+
+.price {
+    color: gold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Button */
+button {
+    background: gold;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: orange;
+}
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">الرئيسية</a>
+    <a href="gallery.html">اللوحات</a>
+    <a href="contact.html">تواصل</a>
+</div>
+
+<h1>🎨 معرض اللوحات</h1>
+
+<div class="gallery">
+
+    <!-- لوحة 1 -->
+    <div class="card">
+        <img src="images/as.png" alt="لوحة غروب الشمس">
+        <div class="info">
+            <h3>غروب الشمس</h3>
+            <p class="price">500 جنيه</p>
+            <button onclick="addToCart('غروب الشمس')">أضف للسلة</button>
+        </div>
+    </div>
+
+    <!-- لوحة 2 -->
+    <div class="card">
+        <img src="images/an5.jpg" alt="لوحة طبيعة">
+        <div class="info">
+            <h3>رسومات كرتونية</h3>
+            <p class="price">499 جنيه</p>
+            <button onclick="addToCart('رسومات كرتونية')">ضف للسلة</button>
+        </div>
+    </div>
+
+    <!-- لوحة 3 -->
+    <div class="card">
+        <img src="images/an1.jpg" alt="لوحة عصفور">
+        <div class="info">
+            <h3>لوحة عصفور</h3>
+            <p class="price">499 جنيه</p>
+            <button onclick="addToCart('لوحة عصفور')">أضف للسلة</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function addToCart(item) {
+    alert(item + " تم إضافتها للسلة 🛒");
+}
+</script>
+
+</body>
+</html>

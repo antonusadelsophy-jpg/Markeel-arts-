@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>تواصل معنا | Markeel Art</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #111;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background:#22ff;
+    padding: 15px;
+    text-align: center;
+}
+.navbar a {
+    color:red;
+    margin: 0 15px;
+    text-decoration: none;
+    cursor:pointer;
+}
+.navbar a:hover {
+    color: gold;
+    background:green;
+     
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+}
+
+/* Inputs */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border:none;
+    border-radius: 8px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: gold;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background:orange;
+    color:red;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    background: #25D366;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+.whatsapp:hover{
+  color:red;
+  background:orange;
+}
+a{ text-decoration:none;
+  color:red;
+  background:blue;
+  text-align:center;
+  margin-top:20px;
+  padding: 12px;
+  display:block;
+  border-radius:10px ;
+  cursor:pointer;
+}
+a:hover{ color:green;
+  background-color:red;
+}
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">الرئيسية🏚️</a>
+    <a href="gallery.html">🖼️اللوحات</a>
+    <a href="contact.html">📞تواصل</a>
+</div>
+
+<div class="container">
+    <h1>📩 تواصل معنا</h1>
+
+    <form onsubmit="sendWhatsApp(event)">
+        <input type="text" id="name" placeholder="اسمك" required>
+        <input type="email" id="email" placeholder="بريدك الإلكتروني" required>
+        <textarea id="message" placeholder="اكتب رسالتك..." required></textarea>
+
+        <button type="submit">إرسال</button>
+    </form>
+
+    <a href="https://wa.me/201206014362" target="_blank" class="whatsapp">
+        💬 تواصل عبر واتساب
+    </a>
+     <a class="fac"href="https://www.facebook.com/share/1CV1qfJkat/" target="_blank" class="fb-btn">
+  <i class="fab fa-facebook"></i>تابعنا</a>  
+</div>
+
+<script>
+function sendWhatsApp(e) {
+    e.preventDefault();
+
+    var name = document.getElementById("name").value;
+    var message = document.getElementById("message").value;
+
+    var url = "https://wa.me/201206014362?text="
+        + "الاسم: " + name + "%0a"
+        + "الرسالة: " + message;
+
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>

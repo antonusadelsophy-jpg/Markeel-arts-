@@ -2,8 +2,7 @@ body{
   background-color:#002256ed;}
 .x { 
   color:red;
-  background-image:url(an.jpg);
-  border:red 5px soild;
+  background-image:url(images/an.jpg);
   background-size:contain;
   background-position:right top;
   width:auto;
@@ -13,7 +12,7 @@ body{
  
   }
   .z{
-  color:blue;
+  color:brown;
   font-family:serif ;
   font-size:30px;
   font-weight:5px ;
@@ -33,6 +32,24 @@ text-align:right;
   text-align: center;
   font-size:30px;
 }
+.art{ text-decoration:none;
+  color:blue;
+  background-color:rgba(rgb(225,0,0))
+  margin-top:20px;
+  padding:12px;
+  display:block;
+  border-radius:10px;
+  cursor:pointer;
+}
+a{
+  color:red;
+ font-weight:bolder; 
+ text-decoration:none;
+ cursor:pointer;
+ font-size:15px;
+ text-align:center;
+}
+a:hover{background:green; color:orange;}
 .fb-btn {
   background: #1877f2;
   color: white;
