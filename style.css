@@ -2,7 +2,9 @@ body{
   background-color:#002256ed;}
 .x { 
   color:red;
-  background:#1268eb;
+  background-image:url(images/an.jpg);
+  background-size:contain;
+  background-position:right top;
   width:auto;
   height: 150px;
   font-family: cairo;
@@ -14,7 +16,7 @@ body{
   font-family:serif ;
   font-size:30px;
   font-weight:5px ;
-  padding-top:5px;}
+  padding-top:20px;}
 
 ul{ list-style-type:square;
 list-style-position:outside;
