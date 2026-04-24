@@ -3,6 +3,7 @@ body{
 .x { 
   color:red;
   background-image:url(an.jpg);
+  border:red 5px soild;
   background-size:contain;
   background-position:right top;
   width:auto;
