@@ -41,6 +41,21 @@ text-align:right;
   border-radius:10px;
   cursor:pointer;
 }
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #111;
+}
+
+.navbar h2 { color: #00ff99; }
+
+.navbar a {
+  color:red;
+  margin-left: 15px;
+  text-decoration: none;
+}
 a{ background:green;
   color:red;
  font-weight:bolder; 
@@ -56,8 +71,9 @@ a:hover{background:green; color:orange;}
   padding: 10px 15px;
   border-radius: 8px;
   text-decoration:none;
-  font-size: 18px;
+  font-size: 30px;
   background-attachment:fixed;
+  text-align:center;
 }
 
 .fb-btn:hover {color:red;
@@ -145,3 +161,5 @@ button {
   cursor: pointer;
   border-radius: 5px;
 }
+     footer{padding:0px;text-align:center;background:#020617; height:250x;
+     }
